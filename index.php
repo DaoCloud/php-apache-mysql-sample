@@ -19,7 +19,12 @@ try {
 } catch (PDOException $e) {
     echo "数据库链接失败: " . $e->getMessage();
 }
-
+/**
+ * 获取环境变量
+ * @param $key
+ * @param null $default
+ * @return null|string
+ */
 function env($key, $default = null)
 {
     $value = getenv($key);
