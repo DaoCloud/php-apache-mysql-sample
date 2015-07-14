@@ -31,14 +31,14 @@ class DBTest extends PHPUnit_Framework_TestCase
 
     function test001()
     {
-        $db->add("abc", "123");
+        $this->db->add("abc", "123");
         $this->assertTrue($this->exist("abc", "123"));
     }
 
     function test002()
     {
         $pre = $this->total();
-        $db->add("bcd", "1234");
+        $this->db->add("bcd", "1234");
         $post = $this->total();
         $this->assertTrue($post - $pre == 1);
     }
