@@ -4,6 +4,8 @@ service:
   - mysql
 
 env:
+  - MYSQL_USERNAME = "root"
+  - MYSQL_PASSWORD = ""
   - MYSQL_INSTANCE = "test"
 
 script:
