@@ -6,7 +6,7 @@ services:
 env:
   - MYSQL_USERNAME = "root"
   - MYSQL_PASSWORD = ""
-  - MYSQL_INSTANCE = "test"
+  - MYSQL_INSTANCE_NAME = "test"
 
 script:
   - phpunit DBTest
