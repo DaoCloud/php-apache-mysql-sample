@@ -26,7 +26,7 @@ class DBTest extends PHPUnit_Framework_TestCase
     }
 
     function total() {
-        return count($db->all());
+        return count($this->db->all());
     }
 
     function test001()
