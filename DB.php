@@ -72,7 +72,7 @@ class DB
 
     public function add($name, $phone)
     {
-        $sql = "INSERT INTO contacts ( name , phone ) VALUES ($name,$phone)";
+        $sql = "INSERT INTO contacts ( name , phone ) VALUES ('$name','$phone')";
 
         return $this->pdo->exec($sql);
     }
