@@ -16,7 +16,7 @@ class DBTest extends PHPUnit_Framework_TestCase
     }
 
     function exist($name, $phone) {
-        $contacts = $db->all();
+        $contacts = $this->db->all();
         foreach ($contacts as $index => $contact) {
             if ($contact['name'] == $name && $contact['phone'] == $phone) {
                 return true;
