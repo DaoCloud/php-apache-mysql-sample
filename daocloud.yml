@@ -1,6 +1,6 @@
 image: daocloud/ci-php:5.5
 
-service:
+services:
   - mysql
 
 env:
