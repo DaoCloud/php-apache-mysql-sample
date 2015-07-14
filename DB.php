@@ -5,7 +5,7 @@
  * Date: 15/7/14
  * Time: 下午12:21
  */
-require('Helper.php');
+require('./Helper.php');
 
 class DB
 {
