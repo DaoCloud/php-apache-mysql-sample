@@ -1,0 +1,10 @@
+image: daocloud/ci-php:5.5
+
+service:
+  - mysql
+
+env:
+  - MYSQL_INSTANCE = "test"
+
+script:
+  - phpunit DBTest
