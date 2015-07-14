@@ -8,5 +8,8 @@ env:
   - MYSQL_PASSWORD = ""
   - MYSQL_INSTANCE_NAME = "test"
 
+install:
+  - docker-php-ext-install pdo_mysql
+
 script:
   - phpunit DBTest
