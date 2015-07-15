@@ -2,7 +2,7 @@
 
 目标：基于典型的 LAMP 技术栈，用 Docker 镜像的方式搭建一个 Linux+Apache+MySQL+PHP 的应用 。本项目代码维护在 [DaoCloud/php-apache-mysql-sample](https://github.com/DaoCloud/php-apache-mysql-sample) 项目中。
 
-> 本次基础镜像使用位于 [Docker Hub](https://github.com/docker-library/official-images/blob/master/library/php) 的 PHP 官方镜像。
+> 本次基础镜像使用位于 [Docker Hub](https://github.com/docker-library/official-images/blob/master/library/php) 的 PHP 官方镜像，也可以根据自己的项目需求与环境依赖[定制一个 PHP 基础镜像]()。
 
 ### 创建 PHP 应用容器
 
