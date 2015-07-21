@@ -1,10 +1,5 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: yeting
- * Date: 15/7/14
- * Time: 下午12:21
- */
+
 require('./Helper.php');
 
 class DB
@@ -21,14 +16,12 @@ class DB
         try {
             $this->pdo = new PDO("mysql:host=$serverName;dbname=$databaseName", $username, $password);
 
-            // set the PDO error mode to exception
             $this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             // 检测数据库是否存在表
             $isInstall = $this->pdo->query("SHOW TABLES like 'contacts';")
                 ->rowCount();
 
-            // sql to create table
             if (!$isInstall) {
                 $sql = "
             CREATE TABLE contacts (

@@ -1,14 +1,8 @@
 <?php
-/**
- * User: yeting
- * Date: 15/7/9
- * Time: 下午4:10
- */
 
 require('DB.php');
 
 $db = new DB();
-
 
 if ($_POST) {
     $db->add($_POST['name'], $_POST['phone']);
@@ -34,13 +28,11 @@ $contacts = $db->all();
             height: 100%;
             color: #666;
             display: table;
-            /*font-weight: 100;*/
         }
 
         .container {
             display: table-cell;
             text-align: center;
-            /*vertical-align: middle;*/
         }
 
         .content {

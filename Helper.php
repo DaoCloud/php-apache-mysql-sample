@@ -16,12 +16,3 @@ function env($key, $default = null)
 
     return $value;
 }
-
-/**
- * @param $data
- */
-function dd($data)
-{
-    var_dump($data);
-    die();
-}
