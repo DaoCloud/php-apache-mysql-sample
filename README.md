@@ -6,7 +6,7 @@
 
 ### 创建 PHP 应用容器
 
-> 因所有镜像均位于境外服务器，为了确保所有示例能正常运行，DaoCloud 提供了一套境内镜像源，并与官方源保持同步。
+> 因所有官方镜像均位于境外服务器，为了确保所有示例能正常运行，DaoCloud 提供了一套境内镜像源，并与官方源保持同步。
 
 首先，选择官方的 PHP 镜像作为项目的基础镜像。
 
@@ -20,7 +20,7 @@ FROM daocloud.io/php:5.6-apache
 RUN docker-php-ext-install pdo_mysql
 ```
 
-* 依赖包安装通过 `docker-php-ext-install` 安装，如果依赖包需要配置参数则通过 `docker-php-ext-configure` 命令。
+* 依赖包通过 `docker-php-ext-install` 安装，如果依赖包需要配置参数则通过 `docker-php-ext-configure` 命令。
 * 安装 `pdo_mysql` PHP 扩展。
 
 然后，将代码复制到目标目录。
@@ -29,7 +29,7 @@ RUN docker-php-ext-install pdo_mysql
 COPY . /var/www/html/
 ```
 
-* 因为基础镜像内已经声明了暴露端口和启动命令，此处可以省略。
+因为基础镜像内已经声明了暴露端口和启动命令，此处可以省略。
 
 至此，包含 PHP 应用的 Docker 容器已经准备好了。PHP 代码中访问数据库所需的参数，是通过读取环境变量的方式声明的。
 
@@ -55,14 +55,14 @@ function env($key, $default = null)
 }
 ```
 
-* 这样做是因为在 Docker 化应用开发的最佳实践中，通常将有状态的数据类服务放在另一个容器内运行，并通过容器特有的绑定机制将应用容器与数据容器动态的连接在一起。
+这样做是因为在 Docker 化应用开发的最佳实践中，通常将有状态的数据类服务放在另一个容器内运行，并通过容器特有的 `link` 机制将应用容器与数据容器动态的连接在一起。
 
 ### 绑定 MySQL 数据容器（本地）
 
 首先，需要创建一个 MySQL 容器。
 
 ```bash
-docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d daocloud.io/mysql:5.5
 ```
 
 之后，通过 Docker 容器间的 `link` 机制，便可将 MySQL 的默认端口（3306）暴露给应用容器。
@@ -78,7 +78,7 @@ docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
 1. 在 GitHub 上 Fork **[DaoCloud/php-apache-mysql-sample](https://github.com/DaoCloud/php-apache-mysql-sample)** 或者添加自己的代码仓库。
 2. 注册成为 DaoCloud 用户。
 3. 在 DaoCloud 「控制台」中选择「代码构建」。
-4. 创建新项目，并选择代码源，指定 `Dockerfile` 路径，构建镜像。
+4. 创建新项目，选择代码源，开始构建镜像。
 5. 在「服务集成」创建 MySQL 服务实例。
 6. 将构建的应用镜像关联 MySQL 服务实例并部署在云端。
 
