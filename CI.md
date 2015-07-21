@@ -8,13 +8,13 @@
 
 使用以下命令安装 PHPUnit 4.0：
 
-```Bash
+```bash
 user$ composer global require "phpunit/phpunit=~4.0"
 ```
 
 假设我们的工程包含两个文件，一个源代码文件 `Cal.php` 和一个测试代码文件 `CalTest.php`。
 
-```PHP
+```php
 <?php
 // Cal.php
 
@@ -26,7 +26,7 @@ class Calculator{
 }
 ```
 
-```PHP
+```php
 <?php
 // CalTest.php
 
@@ -56,7 +56,7 @@ class CalTest extends PHPUnit_Framework_TestCase
 
 使用以下命令来启动测试：
 
-```Bash
+```bash
 uesr$ phpunit CalTest
 ```
 
@@ -68,7 +68,7 @@ uesr$ phpunit CalTest
 
 以下是我们为 **[PHP + MySQL](https://github.com/DaoCloud/php-apache-mysql-sample)** 应用编写的测试代码和 `daocloud.yml`。
 
-```PHP
+```php
 <?php
 // DBTest.php
 
@@ -110,7 +110,7 @@ class DBTest extends PHPUnit_Framework_TestCase
 }
 ```
 
-```YAML
+```yaml
 # daocloud.yml
 image: daocloud.io/ci-php:5.5
 

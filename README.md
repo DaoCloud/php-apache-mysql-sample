@@ -10,13 +10,13 @@
 
 首先，选择官方的 PHP 镜像作为项目的基础镜像。
 
-```Dockerfile
+```dockerfile
 FROM daocloud.io/php:5.6-apache
 ```
 
 接着，用官方 PHP 镜像内置命令`docker-php-ext-install`安装 PHP 的 MySQL 扩展依赖。
 
-```Dockerfile
+```dockerfile
 RUN docker-php-ext-install pdo_mysql
 ```
 
@@ -25,7 +25,7 @@ RUN docker-php-ext-install pdo_mysql
 
 然后，将代码复制到目标目录。
 
-```Dockerfile
+```dockerfile
 COPY . /var/www/html/
 ```
 
@@ -33,7 +33,7 @@ COPY . /var/www/html/
 
 至此，包含 PHP 应用的 Docker 容器已经准备好了。PHP 代码中访问数据库所需的参数，是通过读取环境变量的方式声明的。
 
-```PHP
+```php
 $serverName =   env("MYSQL_PORT_3306_TCP_ADDR", "localhost");
 $databaseName = env("MYSQL_INSTANCE_NAME", "homestead");
 $username =     env("MYSQL_USERNAME", "homestead");
@@ -61,13 +61,13 @@ function env($key, $default = null)
 
 首先，需要创建一个 MySQL 容器。
 
-```Bash
+```bash
 root# docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 ```
 
 之后，通过 Docker 容器间的 `link` 机制，便可将 MySQL 的默认端口（3306）暴露给应用容器。
 
-```Bash
+```bash
 root# docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
 ```
 
