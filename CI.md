@@ -9,7 +9,7 @@
 使用以下命令安装 PHPUnit 4.0：
 
 ```bash
-user$ composer global require "phpunit/phpunit=~4.0"
+composer global require "phpunit/phpunit=~4.0"
 ```
 
 假设我们的工程包含两个文件，一个源代码文件 `Cal.php` 和一个测试代码文件 `CalTest.php`。
@@ -57,7 +57,7 @@ class CalTest extends PHPUnit_Framework_TestCase
 使用以下命令来启动测试：
 
 ```bash
-uesr$ phpunit CalTest
+phpunit CalTest
 ```
 
 ### 利用 DaoCloud 配置持续集成环境（云端）

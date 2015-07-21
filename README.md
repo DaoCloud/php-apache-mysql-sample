@@ -62,13 +62,13 @@ function env($key, $default = null)
 首先，需要创建一个 MySQL 容器。
 
 ```bash
-root# docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
+docker run --name some-mysql -e MYSQL_ROOT_PASSWORD=my-secret-pw -d mysql:tag
 ```
 
 之后，通过 Docker 容器间的 `link` 机制，便可将 MySQL 的默认端口（3306）暴露给应用容器。
 
 ```bash
-root# docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
+docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
 ```
 
 ### 绑定 MySQL 数据服务（云端）
