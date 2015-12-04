@@ -1,5 +1,5 @@
 <?php
-
+echo "ok";
 require('DB.php');
 
 $db = new DB();
