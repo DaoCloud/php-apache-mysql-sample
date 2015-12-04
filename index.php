@@ -1,17 +1,5 @@
 <?php
-echo "ok";
-require('DB.php');
-
-$db = new DB();
-
-if ($_POST) {
-    $db->add($_POST['name'], $_POST['phone']);
-}
-if ($_GET['delete']) {
-    $db->remove($_GET['delete']);
-}
-
-$contacts = $db->all();
+echo "123";
 ?>
 
 <html>
