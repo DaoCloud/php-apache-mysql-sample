@@ -1,22 +1,10 @@
 <?php
-
-require('DB.php');
-
-$db = new DB();
-
-if ($_POST) {
-    $db->add($_POST['name'], $_POST['phone']);
-}
-if ($_GET['delete']) {
-    $db->remove($_GET['delete']);
-}
-
-$contacts = $db->all();
+echo "123";
 ?>
 
 <html>
 <head>
-    <title>PHP-Apache-Mysql-Sample 示例 - DaoCloud</title>
+    <title>PHP-Apache-Mysql-Sample 示例2 - DaoCloud</title>
 
     <link href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet">
 
