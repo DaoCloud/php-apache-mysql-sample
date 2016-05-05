@@ -84,10 +84,10 @@ docker run --name some-app --link some-mysql:mysql -d app-that-uses-mysql
 
 DaoCloud 使用图文介绍
 
-* 了解如何用 DaoCloud 进行代码构建：参考[代码构建](http://help.daocloud.io/features/build-flows.html)。
-* 了解如何用 DaoCloud 进行持续集成：参考[持续集成](http://help.daocloud.io/features/continuous-integration/index.html)。
-* 了解如何用为应用准备一个数据库服务：参考[服务集成](http://help.daocloud.io/features/services.html)。
-* 了解如何部署一个刚刚构建好的应用镜像：参考[应用部署](http://help.daocloud.io/features/packages.html)。
+* 了解如何用 DaoCloud 进行代码构建：参考[代码构建](http://docs.daocloud.io/ci-on-daocloud)。
+* 了解如何用 DaoCloud 进行持续集成：参考[持续集成](http://docs.daocloud.io/ci-image-build)。
+* 了解如何用为应用准备一个数据库服务：参考[服务集成](http://docs.daocloud.io/daocloud-services)。
+* 了解如何部署一个刚刚构建好的应用镜像：参考[应用部署](http://docs.daocloud.io/app-deploy-mgmt)。
 
 [DaoCloud 使用视频介绍](http://7u2psl.com2.z0.glb.qiniucdn.com/daocloud_small.mp4)
 
