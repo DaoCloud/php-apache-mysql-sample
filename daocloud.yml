@@ -1,15 +1,23 @@
-image: daocloud/ci-php:5.5
+version: 2.0
+test:
+  image: daocloud/ci-php:5.5
 
-services:
-  - mysql
+  services:
+    - mysql
 
-env:
-  - MYSQL_USERNAME = "root"
-  - MYSQL_PASSWORD = ""
-  - MYSQL_INSTANCE_NAME = "test"
+  env:
+    - MYSQL_USERNAME = "root"
+    - MYSQL_PASSWORD = ""
+    - MYSQL_INSTANCE_NAME = "test"
 
-install:
-  - docker-php-ext-install pdo_mysql
+  install:
+    - docker-php-ext-install pdo_mysql
 
-script:
-  - phpunit DBTest
+  script:
+    - phpunit DBTest
+
+build:
+  image:
+    dockerfile_path: Dockerfile
+    build_dir: /
+    cache: true
