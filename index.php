@@ -9,13 +9,44 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 class="text-center">����</h1>
+    <h1 class="text-center">测试</h1>
     <ul class="main ovh">
-         <?php 
-         for($i=1;$i<=30;$i++){
-             <li><img src="images/loading.gif" width="256" height="256" data-original="images/$i.png"></li>
-             }
-      ?>
+     <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/1.png"></li>
+           <li><img src="images/loading.gif" width="256" height="256" data-original="images/2.png"></li>    
+             
+             
     </ul>
     <script src="./node_modules/jquery/dist/jquery.min.js" type="text/javascript"></script>
     <script src="./node_modules/lazyload/jquery.lazyload.js" type="text/javascript"></script>
