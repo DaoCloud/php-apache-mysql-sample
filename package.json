@@ -1,0 +1,17 @@
+{
+  "name": "vimi",
+  "version": "1.0.0",
+  "description": "test lazyload for vimi",
+  "main": "test.html",
+  "dependencies": {
+    "jquery": "^1.12.4",
+    "lazyload": "^1.8.4",
+    "normalize.css": "^6.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vow",
+  "license": "MIT"
+}

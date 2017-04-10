@@ -1,0 +1,25 @@
+/*common*/
+.fl{float: left;}
+.fr{float:right}
+.text-center{text-align: center;}
+.ovh{overflow: hidden;}
+
+/*ul*/
+ul.main{padding:0;width: 90%;margin:0 auto;}
+ul.main li{list-style: none;float: left;width:10%;margin:0 1% 10px;border:1px solid #eee}
+ul.main li img{width:100%;height: 100%;}
+@media screen and (max-width: 1440px) {
+    ul.main li{width:17%;}
+}
+@media screen and (max-width: 960px){  
+    ul.main li{width:22%;}
+}
+@media screen and (max-width: 768px){  
+    ul.main li{width:30%;}
+}  
+@media screen and (max-width: 550px){  
+    ul.main li{width:47%;}
+}  
+@media screen and (max-width: 320px){  
+    ul.main li{width:97%;}
+}
