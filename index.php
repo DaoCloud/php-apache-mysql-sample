@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1 class="text-center">测试</h1>
+    <h2 class="text-center">各种头像欢迎您的选购</h2>
+    <h3 class="text-center" style="color:aquamarine">全透明：1元</h3>
+    <h3 class="text-center" style="color:aquamarine">选图半透明：2元</h3>
+    <h3 class="text-center" style="color:aquamarine">自带图全透明：3元</h3>
+    <H2 class="text-center" style="color:red">注：手机透明 电脑不透明（iOS／Android都透明）3开头的qq也可以做哦！</H2>
     <ul class="main ovh">
     <?php 
 
