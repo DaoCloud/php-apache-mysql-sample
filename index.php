@@ -14,7 +14,7 @@
     <?php 
 
 for ($i = 1; $i <= 10; $i++) { 
-echo "<li><img src="images/loading.gif" width="256" height="256" data-original="images/$i.png"></li>"; 
+echo ’<li><img src="images/loading.gif" width="256" height="256" data-original="images/$i.png"></li>‘
 } 
   ?>
         
