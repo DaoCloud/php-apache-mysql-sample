@@ -17,9 +17,9 @@
     <ul class="main ovh">
     <?php 
 
-for ($i = 1; $i <= 10; $i++) 
+for ($i = 1; $i <= 930; $i++) 
 { 
-    $str="<li><img src=\"images/loading.gif\" width=\"256\" height=\"256\" data-original=\"images/".$i.".png\"></li>";
+    $str="<li><img src=\"images/loading.gif\" width="256" height="256" data-original=\"images/".$i.".png\"></li>";
     echo $str;
 } 
   ?>
