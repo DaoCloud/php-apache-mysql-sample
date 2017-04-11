@@ -20,7 +20,7 @@
 for ($i = 1; $i <= 930; $i++) 
 { 
    $str="<li><img src=\"images/loading.gif\" width=\"256\" data-original=\"images/".$i.".png\"></li>“;
-   $ech="<a>编号为".$i."号</a>;
+   $ech="<h4 class=`text-center>编号为".$i."号</h4>";
    echo $str;
    echo "</br>";
    echo $ech;
